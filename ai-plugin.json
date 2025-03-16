@@ -8,11 +8,10 @@
       "type": "none"
     },
     "api": {
-      "type": "openapi",
-      "url": "http://localhost:8000/openapi.yaml"
-    },
-    "logo_url": "http://localhost:8000/logo.png",
-    "contact_email": "youremail@example.com",
-    "legal_info_url": "http://localhost:8000/legal"
+  "type": "openapi",
+  "url": "https://github-mcp-server-production.up.railway.app/openapi.yaml"
+   },
+    "logo_url": "https://github-mcp-server-production.up.railway.app/logo.png",   
+    "legal_info_url": "https://github-mcp-server-production.up.railway.app/legal"  
   }
   

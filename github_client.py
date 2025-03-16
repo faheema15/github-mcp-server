@@ -1,15 +1,11 @@
 from github import Github
-from dotenv import load_dotenv
 import os
 
-# Load environment variables from .env
-load_dotenv()
-
-# Get the GitHub token
+# Directly get the GitHub token from environment variables
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 
 if not GITHUB_TOKEN:
-    raise Exception("GitHub token not found. Make sure it's set in the .env file.")
+    raise Exception("GitHub token not found. Make sure it's set in the environment variables in Railway.")
 
 # Initialize the GitHub client
 github_client = Github(GITHUB_TOKEN)

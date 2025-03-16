@@ -1,0 +1,18 @@
+{
+    "schema_version": "v1",
+    "name_for_model": "github_mcp_server",
+    "name_for_human": "GitHub MCP Server",
+    "description_for_model": "Interact with GitHub. Get user info, list repositories, and create issues.",
+    "description_for_human": "A simple plugin to interact with GitHub via API - view repos, get user details, and create issues.",
+    "auth": {
+      "type": "none"
+    },
+    "api": {
+      "type": "openapi",
+      "url": "http://localhost:8000/openapi.yaml"
+    },
+    "logo_url": "http://localhost:8000/logo.png",
+    "contact_email": "youremail@example.com",
+    "legal_info_url": "http://localhost:8000/legal"
+  }
+  

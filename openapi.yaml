@@ -1,0 +1,43 @@
+openapi: 3.0.1
+info:
+  title: GitHub MCP Server
+  description: Interact with GitHub - view repos, get user info, and create issues.
+  version: "1.0"
+
+servers:
+  - url: http://localhost:8000
+
+paths:
+  /github/user:
+    get:
+      summary: Get GitHub user info
+      responses:
+        '200':
+          description: Successful response
+
+  /github/repos:
+    get:
+      summary: List repositories for the user
+      responses:
+        '200':
+          description: Successful response
+
+  /github/create-issue:
+    post:
+      summary: Create a new issue in a repository
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                repo_name:
+                  type: string
+                title:
+                  type: string
+                body:
+                  type: string
+      responses:
+        '200':
+          description: Issue created successfully

@@ -5,7 +5,7 @@ info:
   version: "1.0"
 
 servers:
-  - url: http://localhost:8000
+  - url: https://github-mcp-server-production.up.railway.app
 
 paths:
   /github/user:
